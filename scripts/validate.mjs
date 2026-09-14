@@ -13,6 +13,7 @@ for (const phrase of requiredPhrases) {
   if (!html.includes(phrase)) throw new Error(`Conteúdo obrigatório ausente: ${phrase}`);
 }
 for (const asset of localAssets) await access(asset);
+for (const resource of ['public/styles.css', 'public/gallery.js']) await access(resource);
 if (externalLinks.length < 15) throw new Error('Quantidade inesperada de links para materiais originais.');
 if (html.includes('TODO') || html.includes('Lorem ipsum') || html.includes('placeholder')) throw new Error('Texto provisório localizado.');
 if (/\b(?:src|href)="\/(?:assets|documents|styles\.css)/.test(html)) throw new Error('Caminho absoluto incompatível com GitHub Pages localizado.');

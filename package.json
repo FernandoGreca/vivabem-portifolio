@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "dev:pages": "BASE_PATH=/vivabem-portifolio node scripts/serve.mjs",
-    "lint": "node scripts/validate.mjs",
-    "test": "node scripts/validate.mjs",
+    "lint": "node scripts/validate.mjs && node --check public/gallery.js",
+    "test": "node scripts/validate.mjs && node --check public/gallery.js",
     "build": "node scripts/build.mjs"
   }
 }
