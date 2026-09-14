@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-vivabem",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfólio acadêmico do projeto VivaBem",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "dev:pages": "BASE_PATH=/vivabem-portifolio node scripts/serve.mjs",
+    "lint": "node scripts/validate.mjs",
+    "test": "node scripts/validate.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}
